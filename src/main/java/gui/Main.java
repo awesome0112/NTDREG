@@ -16,7 +16,7 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         setUp();
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/ConcolicStub4LibScene.fxml")));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/NTDRegScene.fxml")));
         Scene scene = new Scene(root);
         stage.setResizable(false);
         stage.setTitle("NTDREG tool");

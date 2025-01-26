@@ -229,7 +229,7 @@ public final class CloneProjectUtil {
                 "markResult.append(statement).append(\"===\");\n" +
                 "markResult.append(isTrueCondition).append(\"===\");\n" +
                 "markResult.append(isFalseCondition).append(\"---end---\");\n" +
-                "writeDataToFile(markResult.toString(), \"" + "src/main/java/utils/autoUnitTestUtil/concreteExecuteResult.txt" + "\", true);\n" +
+                "writeDataToFile(markResult.toString(), \"" + FilePath.concreteExecuteResultPath + "\", true);\n" +
                 "if (!isTrueCondition && !isFalseCondition) return true;\n" +
                 "return !isFalseCondition;\n" +
                 "}\n");

@@ -19,41 +19,29 @@ writer.close();
 e.printStackTrace();
 }
 }
-public static boolean isLeapYear(int year)
+public static int accountBalanceAfterPurchase(int purchaseAmount)
 {
-if (((year % 4 == 0) && mark("year % 4 == 0", true, false)) || mark("year % 4 == 0", false, true))
-{
-{
-if (((year % 100 == 0) && mark("year % 100 == 0", true, false)) || mark("year % 100 == 0", false, true))
+if (((purchaseAmount % 10 >= 5) && mark("purchaseAmount % 10 >= 5", true, false)) || mark("purchaseAmount % 10 >= 5", false, true))
 {
 {
-if (((year % 400 == 0) && mark("year % 400 == 0", true, false)) || mark("year % 400 == 0", false, true))
-{
-mark("return true;\n", false, false);
-return true;
-}
-else {
-mark("return false;\n", false, false);
-return false;
-}
+mark("purchaseAmount+=10 - purchaseAmount % 10;\n", false, false);
+purchaseAmount+=10 - purchaseAmount % 10;
 }
 }
 else {
 {
-mark("return true;\n", false, false);
-return true;
+mark("purchaseAmount-=purchaseAmount % 10;\n", false, false);
+purchaseAmount-=purchaseAmount % 10;
 }
 }
-}
-}
-mark("return false;\n", false, false);
-return false;
+mark("return 100 - purchaseAmount;\n", false, false);
+return 100 - purchaseAmount;
 }
 
 public static void main(String[] args) {
 writeDataToFile("", "src/main/java/data/testDriverData/runTestDriverData.txt", false);
 long startRunTestTime = System.nanoTime();
-Object output = isLeapYear(500);
+Object output = accountBalanceAfterPurchase(0);
 long endRunTestTime = System.nanoTime();
 double runTestDuration = (endRunTestTime - startRunTestTime) / 1000000.0;
 writeDataToFile(runTestDuration + "===" + output, "src/main/java/data/testDriverData/runTestDriverData.txt", true);

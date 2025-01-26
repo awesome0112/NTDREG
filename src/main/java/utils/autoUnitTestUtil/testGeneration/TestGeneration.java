@@ -18,7 +18,9 @@ import java.util.List;
 public class TestGeneration {
     public enum Coverage {
         STATEMENT,
-        BRANCH
+        BRANCH,
+        MCDC,
+        PATH
     }
     protected static CompilationUnit compilationUnit;
     protected static ArrayList<ASTNode> funcAstNodeList;
