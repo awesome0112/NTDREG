@@ -24,10 +24,10 @@ Note:
 6. After the project is uploaded, the main screen should look like this:
 ![image](./src/main/resources/img/main-screen-after-upload.png)
 Note:
-    - Units with black text color is unchanged units in version 2 of the project.
-    - Units with red text color is added units in version 2 of the project.
-    - Units with yellow text color is impacted units in version 2 of the project.
-    - Units with blue text color is changed units in version 2 of the project.
+    - Units with black text color are unchanged units in version 2 of the project.
+    - Units with red text color are added units in version 2 of the project.
+    - Units with yellow text color are impacted units in version 2 of the project.
+    - Units with blue text color are changed units in version 2 of the project.
 7. After the two versions of the project are uploaded, choose the unit and then choose the coverage criteria.
 8. Click the `Generate` button to start the testing process. The result will be displayed, and you can click to each test case to see the details as well as below:
 ![image](./src/main/resources/img/demo.png)
